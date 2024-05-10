@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Use case tehtävä</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="loginForm">
+  <h2>Login</h2>
+  <input type="text" id="username" placeholder="Username"><br><br>
+  <input type="password" id="password" placeholder="Password"><br><br>
+  <button id="loginBtn">Login</button>
+</div>
+
+<div id="loggedInSection" style="display:none;">
+  <h1>Welcome, <span id="usernameDisplay"></span>!</h1>
+  <button id="logoutBtn">Logout</button>
+</div>
+
+<div id="votingSection" style="display:block;">
+  <h2>Voting Section</h2>
+  <div id="voteThemes"></div>
+  <div id="voteBox" style="display:none;">
+    <h2 id="voteTheme"></h2>
+    <input type="text" id="voteName" placeholder="Enter your name">
+    <button id="votePlus">+</button>
+    <button id="voteMinus">-</button>
+  </div>
+</div>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
